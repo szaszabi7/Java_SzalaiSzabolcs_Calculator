@@ -1,0 +1,7 @@
+.button {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 35px;
+}
