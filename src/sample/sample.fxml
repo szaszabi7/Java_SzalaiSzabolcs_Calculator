@@ -21,11 +21,19 @@
       <Button mnemonicParsing="false" onAction="#btnPlusz" stylesheets="@button.css" text="+" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button mnemonicParsing="false" onAction="#btnMinusz" stylesheets="@button.css" text="-" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnSzor" stylesheets="@button.css" text="*" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" onAction="#btnMaradekosOszt" stylesheets="@button.css" text="/" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" onAction="#btnOszt" stylesheets="@button.css" text="\%" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-      <Label fx:id="labelEredmeny" text="Label" textAlignment="CENTER" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-      <Spinner fx:id="spinnerSzam1" editable="true" GridPane.columnSpan="2"/>
-      <Spinner fx:id="spinnerSzam2" editable="true" GridPane.columnIndex="3" GridPane.columnSpan="2" />
+      <Button mnemonicParsing="false" onAction="#btnOszt" stylesheets="@button.css" text="/" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#btnMaradekosOszt" stylesheets="@button.css" text="\%" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="labelEredmeny" textAlignment="CENTER" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Spinner fx:id="spinnerSzam1" editable="true" GridPane.columnSpan="2">
+         <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="0.1" initialValue="0.0" max="1000000" min="-1000000" />
+         </valueFactory>
+      </Spinner>
+      <Spinner fx:id="spinnerSzam2" editable="true" GridPane.columnIndex="3" GridPane.columnSpan="2">
+         <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="0.1" initialValue="0.0" max="1000000" min="-1000000" />
+         </valueFactory>
+      </Spinner>
    </children>
    <padding>
       <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
